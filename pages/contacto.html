@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/png" href="../images/icon.png">
+    <script src="https://kit.fontawesome.com/b6d7194d5a.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!-- Comienso del header -->
+    <header class="header">
+        <!-- <img class="headerLogo" src="../images/logo.png" /> -->
+        <div>
+            <!-- Comienso del Nav -->
+            <nav>
+                <a class="css-button-arrow--black" href="../index.html">Inicio</a>
+                <a class="css-button-arrow--black" href="vestimenta.html">Vestimenta</a>
+                <a class="css-button-arrow--black" href="sobrenosotros.html">Sobre Nosotros</a>
+                <a class="css-button-arrow--black" href="locales.html">Locales</a>
+                <a class="css-button-arrow--black" href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <legend>
+                <h2 class="contactoForm">Formulario de Contacto</h2>
+            </legend>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="escriba aqui su nombre">
+            <div>
+                <label for="Apellido">Apellido:</label>
+                <input type="text" name="Apellido" placeholder="escriba aqui su apellido">
+            </div>
+                <div>
+                    <label for="Correo_Electronico">Correo Electronico</label>
+                    <input type="text" name="Correo_Electronico" placeholder="escriba aqui su Correo">
+                </div>
+
+                <select name="Estado Civil">
+                    <option value="Seleccionar Estado Civil">Estado Civil</option>
+                    <option value="Soltero/a">Soltero/a</option>
+                    <option value="Casado/a">Casado/a</option>
+                </select>
+                <!-- Por ahora usar br hasta aprender margenes en CSS  -->
+                <div>
+                    ¿Desear recibir nuestras promociones?
+                    <input type="checkbox" name="check">
+                </div class="div-espacio">
+                <p>Caja de Comentarios</p>
+                <textarea name="text" cols="30" rows="10" placeholder="comentarios"></textarea>
+                <div>
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Limpiar formulario">
+                </div>
+                </fieldset>
+        </form>
+        <div class="divFooter"></div>
+    </main>
+    <!-- Inicio del FOOTER -->
+    <footer>
+        <div class="redes-container">
+            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-square"></i></a>
+        </div>
+        <p class="copyright">Vazquez Jv Clothes &COPY; Todos los derechos reservados. 2014-2022</p>
+    </footer>
+    <!-- Fin del Footer  -->
+</body>
+
+</html>
