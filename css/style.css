@@ -96,17 +96,7 @@ h1{
     margin: auto;
     text-shadow: 2px 2px 15px black;
     text-align: center;
-    /* transform: rotate(180deg); */
-    transition: height, width, 5s;
 }
-h1:hover{
-    width: 500px;
-    height: 200px;
-    font-size: 40px;
-    background-image: linear-gradient(to right, black, white, beige);
-    text-shadow: 2px 2px 15px rgb(255, 255, 255);
-}
-
 
 /* COMIENZO DE OTRO ARTICULO EN INDEX */
 article h3 {
@@ -125,9 +115,9 @@ article img {
     padding-left: 5em;
     padding-right: 5em;
     margin-top: 50px;
-    text-align: center;
     color: aliceblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 /* H1 DE SOBRE NOSOTROS */
 .h1{
@@ -334,13 +324,13 @@ i{
 }
 
 .gridIndex{
-    width: 200px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px;
     grid-gap: 25px;
-    border: solid 3px #1d1f20;
+    border: double 5px #1d1f20;
     background-color: beige;
     padding: 55px;
     justify-items: center;
@@ -349,8 +339,9 @@ i{
 }
 .gridIndex:hover{
     background-color: aliceblue;
-    width: 300px;
-    height: 300px;
+    width: 800px;
+    height: 500px;
+    border-color: rebeccapurple;
 }
 
 .gridIndexCards{
@@ -384,7 +375,7 @@ i{
         justify-content: space-around;
     }
     .gridIndex{
-        width: 368;
+        width: 200px;
         height: 745px;
         display: grid;
         grid-template-columns: 1fr ;
@@ -393,9 +384,24 @@ i{
         border: solid 3px #1d1f20;
         background-color: beige;
         padding: 35px;
+        transition: width, heigth, 5s;
     }
     .gridIndexCards{
         padding: 2px;
+    }
+    /* Animacion de media Queries */
+    .gridIndex:hover{
+        background-color: aliceblue;
+        width: 230px;
+        height: 600px;
+        border-color: rebeccapurple;
+        margin: auto;
+    }
+    .hdosIndex{
+        margin-top: 50px;
+    }
+    .h1{
+        width: 200px;
     }
 }
 @media screen and (max-width: 525px){
