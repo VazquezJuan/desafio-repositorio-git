@@ -16,7 +16,10 @@ header {
     text-decoration: none;
 }
 /* MENU DE NAVEGACION */
-/* nav {
+
+
+/* Animaciones para los H1 */
+
 
 /* NAVEGADOR BOTONES */
 nav{
@@ -86,12 +89,24 @@ nav a{
 } */
 /* TITULOS DE LOS MENUS */
 h1{
+    width: 400px;
+    height: 100px;
+    color: #1d1f20;
+    padding: 15px;
+    margin: auto;
     text-shadow: 2px 2px 15px black;
     text-align: center;
-    color: #1d1f20;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    /* transform: rotate(180deg); */
+    transition: height, width, 5s;
 }
+h1:hover{
+    width: 500px;
+    height: 200px;
+    font-size: 40px;
+    background-image: linear-gradient(to right, black, white, beige);
+    text-shadow: 2px 2px 15px rgb(255, 255, 255);
+}
+
 
 /* COMIENZO DE OTRO ARTICULO EN INDEX */
 article h3 {
@@ -150,7 +165,7 @@ h2 {
     font-size: 30px;
     border-bottom: 2px solid palevioletred;
     border-top: 2px solid palevioletred;
-
+    margin-top: 30px;
 }
 
 .indexTextoVerano {
@@ -319,8 +334,8 @@ i{
 }
 
 .gridIndex{
-    width: auto;
-    height: auto;
+    width: 200px;
+    height: 400px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px;
@@ -330,10 +345,21 @@ i{
     padding: 55px;
     justify-items: center;
     margin: auto;
-
+    transition: width, heigth, 4s;
+}
+.gridIndex:hover{
+    background-color: aliceblue;
+    width: 300px;
+    height: 300px;
+}
+@keyframes gridIndex {
+    animation-iteration-count: infinite;
 }
 .gridIndexCards{
     padding-right: 15px;
+}
+.gridIndexCards:hover{
+
 }
 /* MEDIA QUERIS MOBILE */
 
