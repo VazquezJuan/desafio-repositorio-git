@@ -352,14 +352,9 @@ i{
     width: 300px;
     height: 300px;
 }
-@keyframes gridIndex {
-    animation-iteration-count: infinite;
-}
+
 .gridIndexCards{
     padding-right: 15px;
-}
-.gridIndexCards:hover{
-
 }
 /* MEDIA QUERIS MOBILE */
 
