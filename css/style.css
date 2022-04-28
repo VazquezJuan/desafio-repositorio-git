@@ -38,10 +38,10 @@ nav a{
     justify-content: space-around;
 }
 .css-button-arrow--black {
-    min-width: 130px;
-    height: 40px;
+    min-width: 150px;
+    min-height: 50px;
     color: #fff;
-    padding: 5px 10px;
+    padding: 1px 10px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -121,7 +121,8 @@ article img {
 }
 /* H1 DE SOBRE NOSOTROS */
 .h1{
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 70px;
     color: #1d1f20;
     font-size: 50px;
     border: double 2px #1d1f20;
@@ -212,17 +213,6 @@ footer{
     float: inline-end;
 }
 /*  FORMULARIO  */
-form{
-    width: 450px;
-    padding: 5px;
-    border: solid 5px #c6c8c9;
-    height: auto;
-    background-color: #1d1f20;
-    color: aliceblue;
-    margin: auto;
-    text-align: center;
-}
-
 
 .div-nosotros-contenedor-1{
     width: auto;
@@ -262,11 +252,6 @@ form{
 }
 .redes-container a{
     font-size: 50px
-}
-
-form{
-    margin-top: 200px;
-    margin-bottom: 200px;
 }
 
     /* INICIO DEL GRID DE VESTIMENTAS */
@@ -324,8 +309,8 @@ i{
 }
 
 .gridIndex{
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 550px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px;
@@ -340,12 +325,14 @@ i{
 .gridIndex:hover{
     background-color: aliceblue;
     width: 800px;
-    height: 500px;
+    height: 600px;
     border-color: rebeccapurple;
 }
 
-.gridIndexCards{
-    padding-right: 15px;
+.gridIndexCards > img{
+    padding: 20px;
+    width: 170px;
+    height: 200px;
 }
 /* MEDIA QUERIS MOBILE */
 
@@ -375,7 +362,7 @@ i{
         justify-content: space-around;
     }
     .gridIndex{
-        width: 200px;
+        width: 400px;
         height: 745px;
         display: grid;
         grid-template-columns: 1fr ;
@@ -393,7 +380,7 @@ i{
     .gridIndex:hover{
         background-color: aliceblue;
         width: 230px;
-        height: 600px;
+        height: 700px;
         border-color: rebeccapurple;
         margin: auto;
     }
@@ -404,6 +391,24 @@ i{
         width: 200px;
     }
 }
+
+/* Formulario de contacto con boostrap */
+form{
+    margin-top: 50px;
+    padding: 15px;
+    background-color: beige;
+    border: solid 1px #1d1f20;
+    width: 50%;
+    height: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+
+
+
 @media screen and (max-width: 525px){
     header{
         margin: auto;
@@ -448,6 +453,10 @@ i{
         color: white;
         background-image: url(../images/fondo.png.jpg);
         box-shadow: 2px 2px 10px rgba(212, 212, 212, 0.25);
+    }
+    .gridIndexCards div{
+        height: 100px;
+        width: 100px;
     }
 
 
